@@ -25,12 +25,3 @@ $background-primary-color: #f3f3f3;
   background: $shadow-color;
   box-shadow: 0 5px 6px 0 rgba(197, 186, 186, 0.5);
 }
-
-.Root {
-  font-family: "Arial", sans-serif;
-  min-width: 320px;
-}
-
-.Main {
-  min-height: calc(100vh - 200px);
-}

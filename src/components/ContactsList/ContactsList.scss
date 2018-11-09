@@ -1,0 +1,40 @@
+@import "../mixins.scss";
+
+.ContactsList {
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+  margin: 16px auto;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.ContactsList-Item {
+  margin: 0 15px 5px 20px;
+
+  &Link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: $font-color-secondary;
+  }
+}
+
+@media ($desktop-width) {
+  .ContactsList {
+    margin: 20px 0 0 27px;
+  }
+
+  .ContactsList-Item {
+    margin: 0 0 0 16px;
+
+    &Link:hover {
+      color: lighten($font-color-primary, 50%);
+    }
+
+    &Link:active {
+      color: lighten($font-color-secondary, 5%);
+    }
+  }
+}

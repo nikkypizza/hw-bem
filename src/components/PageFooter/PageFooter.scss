@@ -1,0 +1,25 @@
+@import "../mixins.scss";
+
+.PageFooter {
+  display: flex;
+  flex-direction: column;
+  min-height: 60px;
+}
+
+.PageFooter-Copyright {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 auto 15px auto;
+  color: $font-color-secondary;
+}
+
+@media ($desktop-width) {
+  .PageFooter {
+    flex-direction: row;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .PageFooter-Copyright {
+    margin: 20px 40px 0 auto;
+  }
+}
