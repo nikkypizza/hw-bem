@@ -1,18 +1,10 @@
-import React from 'react';
-import { cn } from '@bem-react/classname';
-import Article from './article.tsx';
+import React, { Component } from 'react';
+import PageHeader from './PageHeader/PageHeader.tsx';
 
-const cnPage = cn('Page');
-
-function App () {
+export default class App extends Component {
+  render() {
     return (
-      <div className={cnPage()}>
-        <h1 className={cnPage('Title')}>{React.version}</h1>
-        <div className={cnPage('Content')}>
-          <Article/>
-        </div>
-      </div>
+      <PageHeader />
     )
-  } 
-
-export default App
+  }
+}

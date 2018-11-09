@@ -1,0 +1,48 @@
+@import "../app.scss";
+
+.HeaderNavList {
+  padding: 0;
+  list-style: none;
+}
+
+.HeaderNavList-Item {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+
+  &Link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    opacity: 0.6;
+    color: #333333;
+
+    &:hover {
+      color: lighten($font-color-primary, 30%);
+    }
+
+    &:active {
+      color: lighten($font-color-primary, 10%);
+    }
+
+    &_current {
+      pointer-events: none; // Делаем ссылку неактивной ибо она ведет на текущую страницу
+      opacity: 1;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .HeaderNavList {
+    display: flex;
+    margin-bottom: 9px;
+
+    &-Item {
+      margin: 22px 28px 26px 0;
+      padding: 0;
+      border-bottom: none;
+    }
+  }
+}

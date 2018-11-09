@@ -1,0 +1,51 @@
+@import "../app.scss";
+
+.PageHeader {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(256, 256, 256, 0.97);
+
+  &-LogoContainer {
+    display: flex;
+    width: 100%;
+  }
+
+  &-Logo {
+    margin: 12px 19px 0 19px;
+    transition: 0.3s linear;
+  }
+
+  &-MenuToggler {
+    cursor: pointer;
+    align-self: center;
+    box-sizing: content-box;
+    border: none;
+    width: 16px;
+    height: 16px;
+    margin: 10px 10px 0 auto;
+    background: transparent url("assets/PageHeader-icon-closed.svg") no-repeat center;
+  }
+}
+
+@media ($tablet-width) {
+  .PageHeader {
+    flex-direction: row;
+    border-bottom: 1px solid #f0f0f0;
+
+    &-LogoContainer {
+      width: auto;
+    }
+
+    &-Logo {
+      margin: 26px 18px 15px 40px;
+      transition: 0.3s linear;
+    }
+
+    &-MenuToggler {
+      display: none;
+    }
+  }
+}
