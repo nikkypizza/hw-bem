@@ -1,0 +1,24 @@
+@import "../mixins.scss";
+
+.Cameras {
+  margin: 0 6%;
+}
+
+.Cameras-Header {
+  font-size: calc(13px + 1.5vw);
+  margin: 2vw 0;
+  color: $font-color-primary;
+  line-height: 28px;
+  transition: 0.2s linear;
+}
+
+.Cameras-List {
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.Cameras-ListItem {
+  justify-self: center;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { cn } from '@bem-react/classname';
 import PageHeader from './PageHeader/PageHeader';
+import Cameras from './Cameras/Cameras';
 import PageFooter from './PageFooter/PageFooter';
 import './global.scss';
 
@@ -11,6 +12,9 @@ export default class App extends Component {
     return (
       <div className={cnPage()}>
         <PageHeader />
+        <main>
+          <Cameras />
+        </main>
         <PageFooter />
       </div>
     )
