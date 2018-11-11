@@ -1,6 +1,6 @@
 @import "../mixins.scss";
 
-.PageHeader {
+.PageHeaderMobile {
   position: sticky;
   z-index: 1;
   top: 0;
@@ -28,24 +28,34 @@
     margin: 10px 10px 0 auto;
     background: transparent url("assets/PageHeader-icon-closed.svg") no-repeat center;
   }
+
 }
 
-@media ($tablet-width) {
-  .PageHeader {
-    flex-direction: row;
-    border-bottom: 1px solid #f0f0f0;
+.PageHeaderMobile-Nav {
+  &_open {
+    display: block;
+  }
 
-    &-LogoContainer {
-      width: auto;
-    }
+  &_closed {
+    display: none;
+  }
+}
 
-    &-Logo {
-      margin: 26px 18px 15px 40px;
-      transition: 0.3s linear;
-    }
+.PageHeaderBrowser {
+  flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
 
-    &-MenuToggler {
-      display: none;
-    }
+  &-LogoContainer {
+    display: flex;
+    width: auto;
+  }
+
+  &-Logo {
+    margin: 26px 18px 15px 40px;
+    transition: 0.3s linear;
+  }
+
+  &-MenuToggler {
+    display: none;
   }
 }

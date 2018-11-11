@@ -8,6 +8,7 @@ const generateKey = (pre: string) => {
 
 const cnContactsList = cn('ContactsList');
 const LINKS_TEXT_CONTENT = [`Помощь`, `Обратная Связь`, `Разработчикам`, `Условия использования`];
+
 const linkItems = LINKS_TEXT_CONTENT.map((it) => {
   return (
     <li key={generateKey(it)} className={cnContactsList('Item')}>

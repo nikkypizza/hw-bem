@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { cn } from '@bem-react/classname';
-import PageHeader from './PageHeader/PageHeader.tsx';
-import PageFooter from './PageFooter/PageFooter.tsx';
+import PageHeader from './PageHeader/PageHeader';
+import PageFooter from './PageFooter/PageFooter';
 import './global.scss';
 
 
